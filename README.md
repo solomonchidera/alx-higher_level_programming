@@ -86,11 +86,13 @@ To get started with high-level programming languages, you can follow these steps
 
 1. Choose a high-level programming language that suits your project's requirements.
 
-2. Install a de
+2. Install a text editor (vim, emacs, sublime text or vscode).
 
 3. Study the language's syntax and features by referring to documentation and tutorials.
 
 4. Start writing and running code to build your applications.
+
+5. Practice and practice.
 
 ## Contributing
 
