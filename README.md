@@ -49,7 +49,7 @@ High-level programming languages offer several advantages:
 
 6. **Community Support:** High-level languages often have active and supportive communities, providing resources, libraries, and tools.
 
-## Common Use Cases
+## Common Use Cases 
 
 High-level programming languages are used in a wide range of applications, including:
 
