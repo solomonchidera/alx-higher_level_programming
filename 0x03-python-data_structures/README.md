@@ -1,3 +1,3 @@
 ### Data Structure In Python
 
-- Let me do my best.
+- Let me try and do my best.
