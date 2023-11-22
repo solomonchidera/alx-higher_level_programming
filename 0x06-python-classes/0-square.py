@@ -3,7 +3,6 @@
 """Define a square"""
 
 
-
 class Square:
     """Definition of a square"""
     pass
