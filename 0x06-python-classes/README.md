@@ -1,2 +1,2 @@
 ### Python Classes and object.
-Am just tired right now.
+Classes are blueprint of an object
