@@ -1,0 +1,133 @@
+# 7-base_geometry.txt
+
+=============================
+How to use 7-base_geometry.py
+=============================
+
+This library will contain test for ``BaseGeometry`` class that contains
+two methods ``area()`` and ``interger_validator()``
+
+create an instance of BaseGeometry and call area method
+
+::
+
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+	>>> bg = BaseGeometry()
+	>>> bg.area()
+	Traceback (most recent call last):
+	Exception: area() is not implemented
+
+create an instance of BaseGeometry and call integer_validator with int value
+
+::
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("width", 16)
+
+create an instance of BaseGeometry and call integer_validator with negative int
+
+::
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("width", -6)
+	Traceback (most recent call last):
+	ValueError: width must be greater than 0
+
+create an instance of BaseGeometry and call integer_validator with value == 0
+
+::
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("width", 0)
+	Traceback (most recent call last):
+	ValueError: width must be greater than 0
+
+create an instance of BaseGeometry and call integer_validator with no int value
+
+::
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("width", "str")
+	Traceback (most recent call last):
+	TypeError: width must be an integer
+
+create an instance of BaseGeometry and call integer_validator with one argument
+
+::
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("width")
+	Traceback (most recent call last):
+	TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+create an instance of BaseGeometry and call integer_validator without arguments
+
+::
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator()
+	Traceback (most recent call last):
+	TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+create an instance of BaseGeometry and call integer_validator with 3 args
+
+::
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("width", 1, 5)
+	Traceback (most recent call last):
+	TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+create an instance of BaseGeometry and call area with arg
+
+::
+
+	>>> bg = BaseGeometry()
+	>>> bg.area(10)
+	Traceback (most recent call last):
+	TypeError: area() takes 1 positional argument but 2 were given
+
+create an instance of BaseGeometry and call integer_validator with None value
+
+::
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("width", None)
+	Traceback (most recent call last):
+	TypeError: width must be an integer
+
+create an instance of BaseGeometry and call integer_validator with dict value
+
+::
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("width", {"first", 1})
+	Traceback (most recent call last):
+	TypeError: width must be an integer
+
+create an instance of BaseGeometry and call integer_validator with tuple value
+
+::
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("width", (1, 2))
+	Traceback (most recent call last):
+	TypeError: width must be an integer
+
+create an instance of BaseGeometry and call integer_validator with list value
+
+::
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("width", [1, 2])
+	Traceback (most recent call last):
+	TypeError: width must be an integer
+
+create an instance of BaseGeometry and call integer_validator with Boolean
+
+::
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("width", False)
+	Traceback (most recent call last):
+	TypeError: width must be an integer
