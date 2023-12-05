@@ -1,0 +1,92 @@
+# 1-my_list.txt
+
+=======================
+How to Use 1-my_list.py
+=======================
+
+This library has tests for ``MyList`` class that inherite from
+``list`` class and have instance method ``print_sorted``
+
+
+Empty list with calling print_sorted
+
+::
+
+	>>> MyList = __import__('1-my_list').MyList
+	>>> mylist = MyList([])
+	>>> mylist.print_sorted()
+	[]
+
+list of positive int with calling print_sorted method
+
+::
+
+	>>> mylist = MyList([3, 5, 1])
+	>>> mylist.print_sorted()
+	[1, 3, 5]
+
+list of negative int with calling print_sorted method
+
+::
+
+	>>> mylist = MyList([-1, -5, -3])
+	>>> mylist.print_sorted()
+	[-5, -3, -1]
+
+print list without calling print_sorted method
+
+::
+
+	>>> mylist = MyList([1, 8, 4])
+	>>> mylist
+	[1, 8, 4]
+
+create a list and add elements by using append
+
+::
+
+	>>> mylist = MyList()
+	>>> mylist.append(2)
+	>>> mylist.append(-6)
+	>>> mylist.append(4)
+	>>> print(mylist)
+	[2, -6, 4]
+
+create a list and add elements by using append then call print_sorted
+
+::
+
+	>>> mylist = MyList()
+	>>> mylist.append(-3)
+	>>> mylist.append(8)
+	>>> mylist.append(0)
+	>>> mylist.print_sorted()
+	[-3, 0, 8]
+
+test if MyList is subClass from list
+
+::
+
+	>>> issubclass(MyList, list)
+	True
+
+test if an instance of MyList is a instance of list
+
+::
+
+	>>> mylist = MyList()
+	>>> isinstance(mylist, list)
+	True
+
+check if print_sorted return a new list
+
+	>>> mylist = MyList()
+	>>> mylist.append(2)
+	>>> mylist.append(-1)
+	>>> mylist.append(8)
+	>>> print(mylist)
+	[2, -1, 8]
+	>>> mylist.print_sorted()
+	[-1, 2, 8]
+	>>> print(mylist)
+	[2, -1, 8]
