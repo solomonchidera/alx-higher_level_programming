@@ -1,6 +1,3 @@
 #!/usr/bin/node
-// Get the command-line arguments directly
-const [, arg1, arg2] = process.argv;
-
-// Handle undefined cases gracefully using the Nullish Coalescing Operator (??)
-console.log(`${arg1 ?? 'undefined'} is ${arg2 ?? 'undefined'}`);
+const [arg1 = 'undefined', arg2 = 'undefined'] = process.argv.slice(2);
+console.log(`${arg1} is ${arg2}`);
