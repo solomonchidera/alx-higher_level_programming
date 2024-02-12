@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const arrayOfString = ['C is fun', 'Python is cool', 'Javascript is amazing'];
+const arrayOfString = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 let i;
 for (i = 1; i <= 1; i++) {
   console.log(arrayOfString[0]);
