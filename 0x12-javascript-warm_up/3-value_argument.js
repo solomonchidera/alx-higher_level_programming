@@ -1,9 +1,8 @@
 #!/usr/bin/node
-const argument = process.argv.slice(2);
-const output = argument.length;
+const [, , firstArg] = process.argv;
 
-if (output > 0) {
-  console.log(argument[0]);
+if (firstArg) {
+  console.log(firstArg);
 } else {
   console.log('No argument');
 }
